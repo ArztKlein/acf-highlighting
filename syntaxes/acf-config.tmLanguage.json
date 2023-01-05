@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ACF",
+	"patterns": [
+		{
+			"include": "#value"
+		},
+		{
+			"include": "#header"
+		},
+		{
+			"include": "#variable"
+		}
+	],
+	"repository": {
+		"string": {
+			"name": "string.quoted.double.acf-config",
+			"begin": "\"",
+			"end": "\""
+		},
+		"number": {
+			"name": "constant.numeric.acf-config",
+			"match": "[+ -]?[0-9]+([.][0-9]+)?"
+		},
+		"header": {
+			"name": "header.acf-config",
+			"match": "@[a-zA-Z_]+"
+		},
+		"variable": {
+			"name": "variable.acf-config",
+			"match": "[a-zA-Z_][a-zA-Z0-9_]*"
+		},
+		"value": {
+			"patterns": [
+				{
+					"include": "#number"
+				},
+				{
+					"include": "#string"
+				}
+			]
+		}
+	},
+	"scopeName": "source.acf"
+}

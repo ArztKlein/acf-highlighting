@@ -1,0 +1,25 @@
+{
+  "name": "acf-highlighting",
+  "displayName": "ACF Advanced Configuration Format",
+  "description": "Syntax highlighting for the Advanced Configuration Format",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "acf-config",
+      "aliases": ["ACF", "acf-config"],
+      "extensions": [".acf"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "acf-config",
+      "scopeName": "source.acf",
+      "path": "./syntaxes/acf-config.tmLanguage.json"
+    }]
+  }
+}
