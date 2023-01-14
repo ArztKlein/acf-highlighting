@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "acf-highlighting" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+All notable changes to the "acf-highlighting" extension will be documented in this file
 
 ## [Unreleased]
 
-- Initial release
+## [1.1.0] - 2022-01-14
+### Added
+- Inline comments

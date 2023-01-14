@@ -10,6 +10,9 @@
 		},
 		{
 			"include": "#variable"
+		},
+		{
+			"include": "#comment"
 		}
 	],
 	"repository": {
@@ -39,6 +42,10 @@
 					"include": "#string"
 				}
 			]
+		},
+		"comment": {
+			"name": "comment.line.acf-config",
+			"match": ";(.+)" 
 		}
 	},
 	"scopeName": "source.acf"
